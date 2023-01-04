@@ -2,6 +2,14 @@
   "name": "drynews",
   "version": "0.1.0",
   "private": true,
+  "description": "An app to Pay for subscription for Articles about React.JS",
+  "keywords": [
+    "stripe",
+    "react",
+    "nextjs",
+    "subscription",
+    "article"
+  ],
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -20,6 +28,7 @@
     "react-dom": "18.2.0",
     "react-icons": "^4.7.1",
     "sass": "^1.57.1",
+    "stripe": "^11.5.0",
     "typescript": "4.9.4"
   }
 }
