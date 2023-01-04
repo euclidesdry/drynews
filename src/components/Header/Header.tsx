@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 
 import styles from "./styles.module.scss";
-import Image from "next/image";
+import { SigInButton } from "../SignInButton/SigInButton";
 
 interface HeaderProps {}
 
@@ -17,6 +17,8 @@ export function Header({}: HeaderProps) {
           </a>
           <a href="#">Posts</a>
         </nav>
+
+        <SigInButton />
       </div>
     </header>
   );
