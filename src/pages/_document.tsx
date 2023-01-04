@@ -5,6 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head title="DRY.news">
         <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link rel="shortcut icon" href="/favicon.png" type="image/png" />
       </Head>
       <body>
         <Main />

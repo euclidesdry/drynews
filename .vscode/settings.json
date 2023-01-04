@@ -1,4 +1,4 @@
 {
   "cSpell.words": ["drynews"],
-  "conventionalCommits.scopes": ["project", "styles"]
+  "conventionalCommits.scopes": ["project", "styles", "component"]
 }
