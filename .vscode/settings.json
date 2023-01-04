@@ -1,3 +1,4 @@
 {
-  "cSpell.words": ["drynews"]
+  "cSpell.words": ["drynews"],
+  "conventionalCommits.scopes": ["project"]
 }
