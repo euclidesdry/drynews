@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Início | DRY.news</title>
+        <title>Home | DRY.news</title>
       </Head>
       <h1 className={styles.title}>DRY Products</h1>
     </>
