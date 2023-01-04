@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import styles from "./home.module.scss";
 import { SubscribeButton } from "../components/SubscribeButton";
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 import { stripe } from "../services/stripe";
 
 export type ProductProps = {
@@ -37,13 +37,18 @@ export default function Home({ product }: HomeProps) {
           <SubscribeButton priceId={product.priceId} />
         </section>
 
-        <img src="/images/avatar.svg" alt="Girl coding" />
+        <Image
+          src="/images/avatar.svg"
+          alt="Girl coding"
+          width={356}
+          height={521}
+        />
       </main>
     </>
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const price = await stripe.prices.retrieve("price_1MMex7Bc9E8RtIbn3i2dyzcI", {
     expand: ["product"],
   });
@@ -65,5 +70,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
     props: {
       product,
     },
+    revalidate: 60 * 60 * 24, // 24 hours
   };
 };
