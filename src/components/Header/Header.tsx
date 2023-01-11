@@ -1,9 +1,7 @@
-import { ReactNode } from "react";
-
 import styles from "./styles.module.scss";
 import { SigInButton } from "../SignInButton/SigInButton";
 import Image from "next/image";
-import Link from "next/link";
+import { ActiveLink } from "../ActiveLink";
 
 interface HeaderProps {}
 
@@ -19,12 +17,16 @@ export function Header({}: HeaderProps) {
                 />
 
                 <nav>
-                    <Link href="/" className={styles.active}>
+                    <ActiveLink href="/" activeClassName={styles.active}>
                         Home
-                    </Link>
-                    <Link href="/posts" prefetch>
+                    </ActiveLink>
+                    <ActiveLink
+                        href="/posts"
+                        prefetch
+                        activeClassName={styles.active}
+                    >
                         Articles
-                    </Link>
+                    </ActiveLink>
                 </nav>
 
                 <SigInButton />
