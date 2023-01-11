@@ -1,10 +1,18 @@
 {
-    "cSpell.words": ["Casefold", "drynews", "faunadb"],
+    "cSpell.words": [
+        "Casefold",
+        "drynews",
+        "faunadb",
+        "Prismic",
+        "prismicio",
+        "slicemachine"
+    ],
     "conventionalCommits.scopes": [
         "project",
         "styles",
         "component",
         "payments",
-        "auth"
+        "auth",
+        "posts"
     ]
 }

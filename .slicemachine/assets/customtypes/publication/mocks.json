@@ -1,0 +1,22 @@
+{
+  "uid": {
+    "__TYPE__": "UIDContent",
+    "value": "her"
+  },
+  "title": {
+    "__TYPE__": "FieldContent",
+    "value": "occur",
+    "type": "Text"
+  },
+  "content": {
+    "__TYPE__": "StructuredTextContent",
+    "value": [
+      {
+        "type": "paragraph",
+        "content": {
+          "text": "Ex ut non in ipsum. Deserunt eu laborum ullamco amet reprehenderit."
+        }
+      }
+    ]
+  }
+}
